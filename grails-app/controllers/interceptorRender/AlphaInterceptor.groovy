@@ -12,8 +12,8 @@ class AlphaInterceptor {
     boolean before() {
         if(params.alpha) {
 
-            //WORKAROUND (remove to reproduce exception):
-            request.setAttribute(GrailsApplicationAttributes.CONTROLLER_NAME_ATTRIBUTE, "alphabeta")
+            //WORKAROUND
+            //request.setAttribute(GrailsApplicationAttributes.CONTROLLER_NAME_ATTRIBUTE, "alphabeta")
 
             render view: '/alpha/alpha'
             return false
